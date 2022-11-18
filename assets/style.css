@@ -37,8 +37,11 @@ nav ul {
 p {
   display: inline-block;
   padding: 1%;
-  background-color: aqua;
+  background-color: lavender;
   border: 1mm solid black;
+  position: relative;
+  top: 60%;
+  left:85%;
   }
 
 h2 {
@@ -46,9 +49,26 @@ h2 {
   text-align: left;
   }
 
+h3 {
+  display: inline-block;
+  justify-content: center;
+  padding: 1%;
+  background-color: lavender;
+  border: 1mm solid black;
+  position: relative;
+  bottom: 10px;
+  right: 200px;
+}
+
+h4 {
+  font-weight: 200;
+  line-height: normal;
+  margin-left: 10px;
+}
+
 aside {  
   width: 15%;
-  border-right: 1mm solid black;
+  border-right: 2mm solid black;
   background-color: white;
   color: black
   }
@@ -59,18 +79,14 @@ section {
   background-color: #fff;
 }
 
-section aside {
-  float: left;
-}
-
 .hero {
-  background-image: url("../assets/water.jpg");
+  background-image: url("../assets/images/water.jpg");
   height: 200px;
 }
 
 .boxheader {
   display: inline-block;
-  background-color: aqua;
+  background-color: lavenderblush;
   border: 1mm solid black;
 }
 
@@ -111,7 +127,7 @@ section aside {
   order:2;
   width: 90%;
   align-self: center;
-  border: 1mm solid aqua;
+  border: 1mm solid lavenderblush;
   justify-content: center;
 }
 
@@ -123,7 +139,7 @@ section aside {
 .box-2 {
   order:3;
   width: 45%;
-  border: 1mm solid aqua;
+  border: 1mm solid lavenderblush;
 }
 
 .box-2 img {
@@ -132,7 +148,6 @@ section aside {
 }
 
 .cornertext {
-  justify-content: center;
   float: right;
 }
 
@@ -149,10 +164,16 @@ section aside {
   align-self: center;
 }
 
+/* This is a media query */
 @media screen and (max-width: 600px) {
   .boxheader {
-    background-color: turquoise;
+    background-color: lightskyblue;
     display: inline-block; 
     text-align: wrap;
   }
+
+  main nav nav ul section p body header {
+    width:50%;
+  }
+
 }

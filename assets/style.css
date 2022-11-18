@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    margin: 1px;
+    background-color: grey;
+    border-style: solid;
+    color: rgb(0, 0, 0);
+}
+
+.hero {
+  background-color: blue;
+  background-image: url("../assets/water.jpg");
+  height: 200px;
+  color: white;
+}
+
+p {
+  margin: 0;
+  display: inline-block;
+  float: right;
+  padding: 1%;
+  background-color: aqua;
+  border: 1mm solid black;
+  }
+
+.boxheader {
+  display: inline-block;
+  padding: 4px;
+  background-color: aqua;
+  border: 1mm solid black;
+}
+
+
+body {
+    font-family: Arial, 'Times New Roman', Times, serif;
+    line-height: 1;
+    background-color: white;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+
+nav {
+    display: inline;
+  }
+  
+  nav ul {
+    float:right;
+    text-underline-position: below;
+    color: aqua;
+    justify-content: space-evenly;
+    min-width: 3%;
+  }
+  
+  aside {  
+    float: left;
+    width: 15%;
+    border-right: 1mm solid black;
+    background-color: white;
+    color: black
+  }
+  
+  section {
+    flex: 70%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* .flex-container{ 
+    display: flex;
+    background-color: rgb(3, 111, 111);
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+.superhero {
+  display: flex;
+  position: relative;
+}
+
+.box-1 {
+  position: absolute;
+  top: 17px;
+}
+
+.box-2 {
+  position: absolute;
+}
+
+h2 {
+  margin: 0;
+  text-align: left;
+}
+.surf-report {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}ß
+
+.flex-item:first-child{
+  flex-basis: 100%;
+  display: flex;
+} */
+
+@media screen and (max-width: 600px) {
+  .boxheader {
+    background-color: turquoise;
+    display: inline-block;
+  }
+
+
+}

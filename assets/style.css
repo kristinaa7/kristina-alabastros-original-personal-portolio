@@ -3,119 +3,156 @@
 }
 
 header {
-    margin: 1px;
-    background-color: grey;
-    border-style: solid;
-    color: rgb(0, 0, 0);
+    background-color: palevioletred;
+    border-style: 1mm solid black;
 }
 
-.hero {
-  background-color: blue;
-  background-image: url("../assets/water.jpg");
-  height: 200px;
-  color: white;
+body {
+  font-family: Arial, 'Times New Roman', Times, serif;
+  line-height: 1;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  flex-direction: column;
+}
+
+nav {
+  display: inline;
+  float: right;
+}
+
+nav ul {
+  display: flex;
+  text-underline-position: below;
+  color: blue;
+  justify-content: space-evenly;
+  min-width: 3%;
 }
 
 p {
-  margin: 0;
   display: inline-block;
-  float: right;
   padding: 1%;
   background-color: aqua;
   border: 1mm solid black;
   }
 
+h2 {
+  margin: 0;
+  text-align: left;
+  }
+
+aside {  
+  width: 15%;
+  border-right: 1mm solid black;
+  background-color: white;
+  color: black
+  }
+  
+section {
+  flex: 70%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+section aside {
+  float: left;
+}
+
+.hero {
+  background-image: url("../assets/water.jpg");
+  height: 200px;
+}
+
 .boxheader {
   display: inline-block;
-  padding: 4px;
   background-color: aqua;
   border: 1mm solid black;
 }
 
-
-body {
-    font-family: Arial, 'Times New Roman', Times, serif;
-    line-height: 1;
-    background-color: white;
-  }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5%;
-    flex-direction: column;
-  }
-
-nav {
-    display: inline;
-  }
-  
-  nav ul {
-    float:right;
-    text-underline-position: below;
-    color: aqua;
-    justify-content: space-evenly;
-    min-width: 3%;
-  }
-  
-  aside {  
-    float: left;
-    width: 15%;
-    border-right: 1mm solid black;
-    background-color: white;
-    color: black
-  }
-  
-  section {
-    flex: 70%;
-    box-sizing: border-box;
-    background-color: #fff;
+/* This is the About Me section*/
+#aboutme_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
-/* .flex-container{ 
+.aboutme_child {
+  width: 90%;
+  justify-content: center;
+  align-self: center;
+}
+  
+/* This is the Work section */
+  #work {
+    width:15%;
+  }
+
+  #work_container {
     display: flex;
-    background-color: rgb(3, 111, 111);
+    flex-direction: row;
+    width: 100%;
+  }
+
+.flex_container{ 
+    display: flex;
+    width: 85%;
+    background-color: palevioletred;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-} */
-
-.superhero {
-  display: flex;
-  position: relative;
 }
 
 .box-1 {
-  position: absolute;
-  top: 17px;
+  order:2;
+  width: 90%;
+  align-self: center;
+  border: 1mm solid aqua;
+  justify-content: center;
+}
+
+.box-1 img {
+  height: 400px;
+  width: 100%;
 }
 
 .box-2 {
-  position: absolute;
+  order:3;
+  width: 45%;
+  border: 1mm solid aqua;
 }
 
-h2 {
-  margin: 0;
-  text-align: left;
+.box-2 img {
+  height: 200px;
+  width: 70%;
 }
-.surf-report {
-    flex: 1 0 200px;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-}ß
 
-.flex-item:first-child{
-  flex-basis: 100%;
+.cornertext {
+  justify-content: center;
+  float: right;
+}
+
+/* This is the Contact Me section */
+#contactme_container {
   display: flex;
-} */
+  flex-direction: row;
+  width: 100%;
+}
+
+.contactme_child {
+  width: 90%;
+  justify-content: center;
+  align-self: center;
+}
 
 @media screen and (max-width: 600px) {
   .boxheader {
     background-color: turquoise;
-    display: inline-block;
+    display: inline-block; 
+    text-align: wrap;
   }
-
-
 }

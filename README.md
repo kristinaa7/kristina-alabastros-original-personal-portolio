@@ -12,9 +12,14 @@ N/A
 
 To check out specific sections on my personal portolio, you can use the navigation bar at the top right-hand side of the webpage to be  brought directly over to each section. Review my projects in the Work section to see my process and growth during the UW Full Stack Bootcamp.
 
+### Screenshots to Website
+
 ![Alt text](assets/readmepics/kristina1.png "Screenshot1")
 ![Alt text](assets/readmepics/kristina2.png "Screenshot2")
 ![Alt text](assets/readmepics/kristina3.png "Screenshot3")
+
+## Unique Link
+https://kristinaa7.github.io/kristina-alabastros-original-personal-portolio/
 
 ## Credits
 

@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* Semantic tags do not contain . or # and sets the whole section to follow the CSS rules */
 header {
     background-color: palevioletred;
     border-style: 1mm solid black;
@@ -29,9 +30,10 @@ nav {
 nav ul {
   display: flex;
   text-underline-position: below;
-  color: blue;
+  color: black;
   justify-content: space-evenly;
   min-width: 3%;
+  margin: 1%;
 }
 
 p {
@@ -41,7 +43,7 @@ p {
   border: 1mm solid black;
   position: relative;
   top: 60%;
-  left:85%;
+  left: 80%;
   }
 
 h2 {
@@ -90,7 +92,7 @@ section {
   border: 1mm solid black;
 }
 
-/* This is the About Me section*/
+/* This is the About Me section, applying styles specifically to the ID aboutme in the HTML */
 #aboutme_container {
   display: flex;
   flex-direction: row;
@@ -103,7 +105,7 @@ section {
   align-self: center;
 }
   
-/* This is the Work section */
+/* This is the Work section, applying styles specifically to the ID work in the HTML */
   #work {
     width:15%;
   }
@@ -151,7 +153,7 @@ section {
   float: right;
 }
 
-/* This is the Contact Me section */
+/* This is the Contact Me section, specifically targeting the ID tag */
 #contactme_container {
   display: flex;
   flex-direction: row;
@@ -164,7 +166,7 @@ section {
   align-self: center;
 }
 
-/* This is a media query */
+/* This is a media query rules set when screen size gets smaller*/
 @media screen and (max-width: 600px) {
   .boxheader {
     background-color: lightskyblue;

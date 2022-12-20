@@ -5,7 +5,6 @@
 /* Semantic tags do not contain . or # and sets the whole section to follow the CSS rules */
 header {
     background-color: palevioletred;
-    border-style: 1mm solid black;
 }
 
 body {
@@ -25,6 +24,7 @@ main {
 nav {
   display: inline;
   float: right;
+  margin: 10px;
 }
 
 nav ul {
@@ -69,7 +69,7 @@ h4 {
 }
 
 aside {  
-  width: 15%;
+  width: 16%;
   border-right: 2mm solid black;
   background-color: white;
   color: black
@@ -107,7 +107,7 @@ section {
   
 /* This is the Work section, applying styles specifically to the ID work in the HTML */
   #work {
-    width:15%;
+    width: 15%;
   }
 
   #work_container {

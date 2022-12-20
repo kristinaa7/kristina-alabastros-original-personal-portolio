@@ -32,8 +32,8 @@ nav ul {
   text-underline-position: below;
   color: black;
   justify-content: space-evenly;
-  min-width: 3%;
-  margin: 1%;
+  min-width: 2%;
+  margin: 10px;
 }
 
 p {
@@ -69,7 +69,7 @@ h4 {
 }
 
 aside {  
-  width: 16%;
+  width: 15%;
   border-right: 2mm solid black;
   background-color: white;
   color: black
